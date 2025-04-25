@@ -5,6 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Explorando o Mundo</title>
 </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explorando o Mundo</title>
+        <style>
+          * { margin: 0; padding: 0; box-sizing: border-box; }
+          body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+          }
+          header {
+            background: linear-gradient(90deg, rgb(182, 0, 0), #ff0000);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          }
+          nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #e0f7ff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          }
+          nav ul li {
+            margin: 0 15px;
+          }
+          nav ul li a {
+            text-decoration: none;
+            color: #cc0000;
+            font-weight: bold;
+          }
+          section, article, aside {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+          }
+          section h3, article h4, aside h3 {
+            color: #cc0000;
+            margin-bottom: 15px;
+          }
+          img, video {
+            width: 100%;
+            border-radius: 10px;
+            margin: 15px 0;
+          }
+          form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+          }
+          input, textarea, select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+          }
+          button {
+            background-color: #cc0000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+          }
+          footer {
+            background-color: #fe4f4f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+          }
+          p {
+              text-align: justify;
+          }
+        </style>
+      </head>
 <body>
   <header>
     <h1>Explorando o Mundo</h1>
@@ -23,5 +106,113 @@
       <li><a href="#dicas">Dicas de Viagem</a></li>
     </ul>
   </nav>
-</body>
+
+  <section id="europa">
+    <h3>Paris, França (Europa)</h3>
+    <article>
+      <p>Paris é o destino dos sonhos de muitos viajantes. Conhecida como a “Cidade Luz”, encanta com sua atmosfera romântica, 
+        arquitetura impressionante e rica cena cultural. Passear pelas margens do Rio Sena, visitar monumentos como a Torre Eiffel
+         e a Catedral de Notre-Dame, explorar o Louvre e provar a gastronomia local são experiências imperdíveis. É um lugar onde 
+         a arte e a história se encontram a cada esquina.</p>
+         <img src="Img/paris.webp" alt="Paris">
+         <video src="Vid/paris.mp4" controls></video>
+    </article>
+  </section>
+
+  <section id="asia">
+    <h3>Kyoto, Japão (Ásia)</h3>
+    <article>
+      <p>Kyoto representa o Japão tradicional em sua forma mais pura. Antiga capital imperial, a cidade abriga mais de mil templos
+        budistas e santuários xintoístas, além de belíssimos jardins e casas de chá. Durante a primavera, os famosos sakuras 
+        (flores de cerejeira) colorem a cidade, criando cenários encantadores. Kyoto também é um ótimo lugar para vivenciar 
+        tradições como a cerimônia do chá e observar gueixas nas ruas históricas.</p>
+        <img src="Img/kyoto.jpg" alt="Kyoto">
+        <video src="Vid/kyoto.mp4" controls></video>
+    </article>
+  </section>
+
+  <section id="america-sul">
+    <h3>Machu Picchu, Peru (América do Sul)</h3>
+    <article>
+      <p>Machu Picchu é um dos destinos mais enigmáticos do mundo. Esta cidade inca, escondida entre as montanhas dos Andes 
+        peruanos, impressiona por sua engenharia, beleza natural e significado histórico. A jornada até lá, seja pela Trilha Inca 
+        ou de trem, é cheia de paisagens de tirar o fôlego. Visitar Machu Picchu é como voltar no tempo e mergulhar na cultura 
+        milenar dos povos andinos.</p>
+        <img src="Img/machu picchu.jpg" alt="Machu Picchu">
+        <video src="Vid/machu picchu.mp4" controls></video>
+    </article>
+  </section>
+
+  <section id="africa">
+    <h3>Cidade do Cabo, África do Sul (África)</h3>
+    <article>
+      <p>Cidade do Cabo é um dos destinos mais fascinantes da África. Combinando praias deslumbrantes, montanhas imponentes e uma 
+        mistura de culturas, é ideal para quem busca aventura e contato com a natureza. A icônica Table Mountain oferece uma vista
+         panorâmica incrível da cidade. Também é possível visitar vinícolas próximas, fazer trilhas, mergulhar com tubarões e 
+         conhecer a história da África do Sul em locais como Robben Island.</p>
+         <img src="Img/áfrica.gif" alt="Cidade do Cabo">
+         <video src="Vid/cidade do cabo.mp4" controls></video>
+    </article>
+  </section>
+
+  <section id="america-norte">
+    <h3>Nova York, EUA (América do Norte)</h3>
+    <article>
+      <p>Nova York é vibrante, intensa e cheia de possibilidades. A cidade que nunca dorme é um centro cultural e financeiro 
+        mundial, onde é possível visitar museus renomados, assistir a musicais da Broadway, caminhar pelo Central Park ou subir no
+         Empire State Building. Cada bairro tem sua personalidade, do elegante Manhattan ao descolado Brooklyn. É um destino que 
+         inspira pela sua diversidade e energia contagiante.</p>
+         <img src="Img/nova york.webp" alt="Nova York">
+         <video src="Vid/nova york.mp4" controls></video>
+    </article>
+  </section>
+
+  <section id="oceania">
+    <h3>Sydney, Austrália (Oceania)</h3>
+    <article>
+      <p>Sydney une paisagens naturais estonteantes com vida urbana moderna. É famosa pela sua baía, onde se destaca a Ópera de 
+        Sydney, cartão-postal da cidade, e a Ponte da Baía de Sydney. As praias como Bondi e Manly são ideais para relaxar ou 
+        praticar surf. Sydney também oferece parques, museus, mercados e uma culinária multicultural. É um ponto de partida 
+        excelente para explorar a Austrália.</p>
+        <img src="Img/sydney.jpg" alt="Sydney">
+        <video src="Vid/sydney.mp4" controls></video>
+    </article>
+  </section>
+
+  <section id="antartida">
+    <h3>Antártida</h3>
+    <article>
+      <p>A Antártida é o destino mais exótico e inóspito do planeta. Um continente coberto por gelo, onde as paisagens são 
+        surreais e o silêncio é absoluto. Viagens até lá são feitas em cruzeiros especializados, geralmente partindo da América do
+         Sul. Durante a visita, é possível ver icebergs gigantescos, pinguins, focas e até baleias. É uma experiência 
+         transformadora, que conecta o viajante à força da natureza em seu estado mais puro e selvagem.</p>
+         <img src="Img/antartida.webp" alt="Antártida">
+         <video src="Vid/antartida.mp4" controls></video>
+    </article>
+  </section>
+
+  <section id="dicas">
+    <h3>Dicas de Viagem</h3>
+    <article>
+      <h4>Como planejar um roteiro?</h4>
+      <p>Organize os destinos por proximidade, tempo de viagem e interesses pessoais. Use apps como Google Maps e Rome2Rio.</p>
+    
+      <h4>O que levar na mala?</h4>
+      <ul>
+        <li>Roupas adequadas ao clima</li>
+        <li>Documentos e passaporte</li>
+        <li>Kit primeiros socorros</li>
+        <li>Adaptadores e carregadores</li>
+      </ul>
+
+      <h4>Como economizar?</h4>
+      <ol>
+        <li>Viaje fora da alta temporada</li>
+        <li>Pesquise passagens com antecedência</li>
+        <li>Use hospedagens econômicas</li>
+        <li>Aproveite atrações gratuitas</li>
+      </ol>
+    </article>
+  </section>
+  </body>
 </html>
